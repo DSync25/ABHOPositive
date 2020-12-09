@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navHome"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/navRequests"
+            android:icon="@drawable/requests"
+            android:title="Your request" />
+        <item
+            android:id="@+id/theme"
+            android:title="Dark theme"
+            android:icon="@drawable/theme_switch"
+            android:actionLayout="@layout/theme_switch"/>
+    </group>
+
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/navProfile"
+                    android:icon="@drawable/user"
+                    android:title="Profile" />
+                <item
+                    android:id="@+id/navLogout"
+                    android:icon="@drawable/log_out"
+                    android:title="Logout" />
+            </group>
+        </menu>
+    </item>
+</menu>
